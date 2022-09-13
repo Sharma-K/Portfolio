@@ -633,6 +633,15 @@ input:focus, textarea:focus{
     border-radius: 1em;
     width: 200px;
 }
+.content a{
+    text-decoration: none;
+    color: orange;
+
+}
+.content a:hover{
+    color: orange;
+    
+}
 
 @media only screen and (max-width: 1300px) {
 
