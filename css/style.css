@@ -152,6 +152,7 @@ h1{
     border-radius: 0.5em;
 }
 
+
 .res-icon{
     width: 60px;
     height: 60px;
@@ -196,12 +197,13 @@ h1{
 }
 .center-line{
     width: 3px;
-    background-color: lightgray;
+    background-color: lightgrey;
     position: relative;
     top: -20px;
     left: 50%;
-    height: 120vh;
-    transform: translateX(-50%);
+    height: 118vh;
+    /* transform: translateX(-50%); */
+    margin-top: 2vh;
 }
 .center-line2{
     width: 3px;
@@ -393,17 +395,17 @@ h1{
 }
 
 .projects{
-   
     margin-top: 200px;
     height: 100vh;
     background: linear-gradient(orange, rgb(245, 161, 36));
+    
 }
 .project-con{
     /* width: 500px;
     height: 400px; */
 
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-evenly;
 }
 .projects h1{
@@ -418,7 +420,7 @@ h1{
     
     width: 300px;
     height: 200px;
-    margin-left: 30px;
+    /* background-color: red; */
   
 }
 
@@ -448,7 +450,7 @@ h1{
 
 }
 
-.container .cardt .icon .fa {
+/* .container .cardt .icon  {
 
     position: absolute;
 
@@ -462,7 +464,7 @@ h1{
 
     color: #fff;
 
-}
+} */
 
 .containers .cardt .slide {
  
@@ -471,6 +473,7 @@ h1{
     height: 200px;
 
     transition: 0.5s;
+  
     
 
 }
@@ -498,10 +501,14 @@ h1{
     transform: translateY(0px);
 
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .containers .cardt .slide.slide2 {
 
-    position: relative;
+    /* position: relative; */
 
     display: flex;
 
@@ -536,13 +543,13 @@ h1{
     position: absolute;
 
     width: 30px;
-
+ 
     height: 4px;
 
-    bottom: 15px;
+    bottom: 6px;
 
 
-    transform: translateX(-50%);
+    transform: translate(-50%);
 
     background: orange;
 
