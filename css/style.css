@@ -213,7 +213,7 @@ h1{
     position: relative;
     top: -20px;
     left: 50%;
-    height: 50vh;
+    height: 90vh;
     transform: translateX(-50%);
 }
 
@@ -236,7 +236,7 @@ h1{
     float: left;
     clear: both;
 }
-.exp .con{
+.exp .con:nth-child(even){
     width: 70vh;
     /* background-color: pink; */
     height: 30vh;
@@ -244,6 +244,13 @@ h1{
     margin: -40vh 0vh 0vh 15vh;
     float: left;
     clear: both;
+}
+
+.con2{
+    width: 70vh;
+    /* position: absolute; */
+    float: right;
+    clear:both;
 }
 .con{
     font-family: 'Roboto Mono';
