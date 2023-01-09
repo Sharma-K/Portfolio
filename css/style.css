@@ -200,12 +200,11 @@ h1{
 .center-line{
     width: 3px;
     background-color: lightgrey;
-    position: relative;
-    top: -20px;
+    position:relative;
+    transform: translateX(-50%);
     left: 50%;
-    height: 118vh;
-    /* transform: translateX(-50%); */
-    margin-top: 2vh;
+    height: 110vh;
+ 
 }
 .center-line2{
     width: 3px;
@@ -217,32 +216,47 @@ h1{
     transform: translateX(-50%);
 }
 
-.edu .con:nth-child(even){
-    width: 70vh;
-    /* background-color: pink; */
-    height: 30vh;
-    position: relative;
-    margin: 0vh 15vh 6vh 0vh;
-    float: right;
-    clear: both;
+.educont{
+  margin-top: -55%;
 }
-.edu .con:nth-child(odd)
-{
+.eduCon{
+    margin-top: 2vh;
     width: 70vh;
-    /* background-color: pink; */
     height: 30vh;
-    position: relative;
-    margin: 0vh 0vh 5vh 15vh;
+    
+}
+
+.edu .con{
+    display: flex;
+    /* background-color: pink; */
+   
+
+}
+
+.edu .con:nth-child(even)
+{
+    justify-content: flex-end;
+}
+
+
+.exp .con:nth-child(even){
+    width: 70vh;
+    
+    height: 30vh;
+    position: absolute;
+    margin: -40vh 0vh 0vh 15vh;
     float: left;
     clear: both;
 }
-.exp .con:nth-child(even){
+
+.exp .con:nth-child(odd)
+{
     width: 70vh;
     /* background-color: pink; */
     height: 30vh;
     position: absolute;
     margin: -40vh 0vh 0vh 15vh;
-    float: left;
+    float: right;
     clear: both;
 }
 
@@ -660,44 +674,34 @@ input:focus, textarea:focus{
 }
 
 @media only screen and (max-width: 400px) {
+
+
+    .edu-title{
+        width: 90vw;
+    }
+
     .edu .con:nth-child(odd){
-        width: 5px;
-       font-size: 10px;
-        background-color: pink;
+      justify-content: flex-start;
     }
 
 }
 
 @media only screen and (max-width: 1300px) {
 
+    
+    .educont{
+        margin-top: -100vh;
+        margin-left: 10vh;
+      }
+
     .edu-title{
       float: left;
     }
-    .edu .con{
-        margin: 0;
-        padding: 0;
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        /* flex-wrap: wrap; */
-        
-    }
-    .edu .con:nth-child(odd){
-        width: 90vh;
-        margin: 0;
-  /* float: left;
-  clear: both; */
-    }
+   
     .edu .con:nth-child(even){
-        width: 90vh;
-        height: 40vh;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-       float: left;
-       clear: both;
+       justify-content: flex-start;
     }
+   
 
     .exp .con{
         width: 50vh;
